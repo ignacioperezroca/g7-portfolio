@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>G7 Portfolio</title>
+    <meta name="description" content="Legacy portfolio project for G7, preserved as a static landing page." />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f172a;
+        --card: #111827;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: radial-gradient(circle at top, #1e293b, var(--bg));
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      main {
+        width: min(720px, 100%);
+        background: rgba(17, 24, 39, 0.82);
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+      .kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+      }
+      h1 { margin: 12px 0 14px; font-size: clamp(2.2rem, 5vw, 4rem); }
+      p { color: var(--muted); line-height: 1.6; font-size: 1.05rem; }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin-top: 28px;
+      }
+      .card {
+        background: rgba(15, 23, 42, 0.72);
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 18px;
+        padding: 18px;
+      }
+      .label { color: var(--muted); font-size: 13px; }
+      .value { font-size: 1.1rem; margin-top: 6px; font-weight: 700; }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="kicker">Legacy portfolio</div>
+      <h1>G7 Portfolio</h1>
+      <p>
+        Static landing page prepared for GitHub and Vercel publishing. The
+        original source lives under the legacy `app/` tree.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <div class="label">Status</div>
+          <div class="value">Ready to deploy</div>
+        </div>
+        <div class="card">
+          <div class="label">Stack</div>
+          <div class="value">HTML, Sass, Gulp</div>
+        </div>
+        <div class="card">
+          <div class="label">Repo</div>
+          <div class="value"><a href="https://github.com/ignacioperezroca/g7-portfolio">GitHub</a></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
